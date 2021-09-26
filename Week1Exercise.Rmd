@@ -1,13 +1,29 @@
 ---
 title: "Week 1 Exercise Part B"
 output: html_document
+author: Hui Jeong Jung
+date: September 26, 2021
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Histogram of log-normal distribution
+### Sampling 100 values from a log-normal distribution
+```{r}
+samples <- rlnorm(100, meanlog = 1, sdlog = 0.25)
+```
 
-## Mean and Variance of sample
+### Histogram of log-normal distribution
+```{r}
+hist(samples)
+hist(log(samples))
+```
 
+### Mean and Variance of sample
+```{r}
+mean<-mean(samples)
+variance<-var(samples)
+```
+The mean is `r mean`
+The variance is `r variance`
