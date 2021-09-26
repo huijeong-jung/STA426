@@ -1,0 +1,13 @@
+---
+title: "Week 1 Exercise Part B"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Histogram of log-normal distribution
+
+## Mean and Variance of sample
+
