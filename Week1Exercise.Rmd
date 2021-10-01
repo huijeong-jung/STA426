@@ -10,11 +10,13 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ### Sampling 100 values from a log-normal distribution
+In the first part of the exercise, we are sampling 100 values from a log-normal distribution where the mu is 1 and sigma is 0.25. In a log-normal distribution, the mu represents the logarithmic average for the distribution function, and the sigma represents the scatter. 
 ```{r}
 samples <- rlnorm(100, meanlog = 1, sdlog = 0.25)
 ```
 
 ### Histogram of log-normal distribution
+This part of the exercise shows the histogram of the distribution of the sample and the distribution on log scale. 
 ```{r}
 hist(samples)
 hist(log(samples))
@@ -25,5 +27,4 @@ hist(log(samples))
 mean<-mean(samples)
 variance<-var(samples)
 ```
-The mean is `r mean`
-The variance is `r variance`
+To conclude, the mean of the sample is `r mean` and the variance is `r variance`. 
