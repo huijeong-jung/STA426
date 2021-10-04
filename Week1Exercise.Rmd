@@ -9,6 +9,8 @@ date: September 26, 2021
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+
+
 ### Sampling 100 values from a log-normal distribution
 In the first part of the exercise, we are sampling 100 values from a log-normal distribution where the mu is 1 and sigma is 0.25. In a log-normal distribution, the mu represents the logarithmic average for the distribution function, and the sigma represents the scatter. 
 ```{r}
